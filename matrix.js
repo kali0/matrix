@@ -35,3 +35,8 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 33);
+
+// Adicione este código para tocar o som quando a página for carregada
+window.onload = function() {
+    document.getElementById('matrixSound').play();
+}
