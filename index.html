@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Senha Aleatória</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #33ff33;
+            background-color: black;
+            overflow: hidden;
+        }
+        #matrix {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div id="content">
+        <h1>Gerador de Senha Aleatória</h1>
+        <input type="text" id="password" readonly>
+        <button onclick="generate()">Gerar Senha</button>
+    </div>
+    <script src="matrix.js"></script>
+    <script src="password.js"></script>
+</body>
+</html>
